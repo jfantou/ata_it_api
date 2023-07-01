@@ -13,8 +13,8 @@ Or if you use an IDE like intellij you can launch directly on it.
 
 ## SWAGGER
 
-You can find the URL at this URL: http://localhost:8080/swagger-ui/index.html
-You can test with this interface the API.
+You can find the swagger interface at this URL: http://localhost:8080/swagger-ui/index.html.
+You can test the endpoint with this interface the API or by POSTMAN.
 
 ### Data
 
