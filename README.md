@@ -1,3 +1,5 @@
+Important: it's an API created with java 17
+
 # JOB DATA API
 
 You will find some informations to use the API.
