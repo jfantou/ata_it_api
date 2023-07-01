@@ -6,7 +6,7 @@ import com.atait.api.exception.SortNotFoundException;
 
 import java.util.Comparator;
 
-public class SalaryComparator {
+public class SalaryInformationComparator {
 
     static Comparator<SalaryInformation> salaryComparator = Comparator.comparing(SalaryInformation::getSalary);
     static Comparator<SalaryInformation> timestampComparator = Comparator.comparing(SalaryInformation::getTimestamp);
@@ -32,7 +32,7 @@ public class SalaryComparator {
     static Comparator<SalaryInformation> additionalCommentsComparator = Comparator.comparing(SalaryInformation::getAdditional_comments);
 
 
-    public static Comparator<SalaryInformation> salaryComparator(String sort, String sortType) {
+    public static Comparator<SalaryInformation> salaryInformationComparator(String sort, String sortType) {
         Comparator<SalaryInformation> comparator;
         switch(sort) {
             case "salary" -> comparator = salaryComparator;

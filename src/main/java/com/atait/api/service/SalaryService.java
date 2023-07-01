@@ -12,7 +12,7 @@ import java.util.function.Predicate;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import static com.atait.api.utils.SalaryComparator.salaryComparator;
+import static com.atait.api.utils.SalaryInformationComparator.salaryInformationComparator;
 
 
 @Service
@@ -34,8 +34,6 @@ public class SalaryService {
             filteredData = sortData(sortList, sortType, filteredData);
         }
 
-        filteredData.stream().sorted();
-
         return filteredData;
     }
 
@@ -43,11 +41,11 @@ public class SalaryService {
         List<SalaryInformation> sortData;
         Comparator<SalaryInformation> comparator;
         if(sortList.size() == 1){
-            comparator = salaryComparator(sortList.get(0), sortType);
+            comparator = salaryInformationComparator(sortList.get(0), sortType);
         } else {
-            comparator = salaryComparator(sortList.get(0), sortType);
+            comparator = salaryInformationComparator(sortList.get(0), sortType);
             for (String sort : sortList) {
-                comparator = comparator.thenComparing(salaryComparator(sort, sortType));
+                comparator = comparator.thenComparing(salaryInformationComparator(sort, sortType));
             }   
         }
         sortData = data.stream().sorted(comparator).collect(Collectors.toList());
