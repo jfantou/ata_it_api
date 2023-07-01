@@ -38,7 +38,7 @@ Example: salary>=1000
 Filter multiple colunm is possible also.
 Example: Example: salary>=1000,job_title=Software Engineer
 
-##Sort 
+## Sort option
 
 You can also sort the data if you put a parameter variable "sort".
 Example: sort=location
