@@ -2,6 +2,13 @@
 
 You will find some informations to use the API.
 
+## Launch API  
+
+This API is an spring boot application using MAVEN, you can use a maven command line to launch it:
+mvn spring-boot:run
+
+Or if you use an IDE like intellij you can launch directly on it.
+
 ## SWAGGER
 
 You can find the URL at this URL: http://localhost:8080/swagger-ui/index.html
