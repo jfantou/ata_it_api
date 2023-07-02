@@ -37,6 +37,8 @@ If you want to filter the data you will need to add the parameter variable "filt
 The parameter variable accept only three colums: job_title, salary and gender. 
 If you put an other variable value, the API will return an error response with a code status at 400.
 
+Example: filters=salary>1000
+
 ### Operation accepted
 For filter by gender or job_title, you need to use the symbol "=" and put the value.
 Example: gender=M (You will have only results with a gender equals to "M")
@@ -47,11 +49,12 @@ For filter by salary you will need to put mathematics symbols:
 - "<="
 - "<"
 - "="
-Example: salary>=1000
+
+Example: filters=salary>=1000
 
 Filter multiple colunm is possible also.
 
-Example: salary>=1000,job_title=Software Engineer
+Example: filters=salary>=1000,job_title=Software Engineer
 
 ## Sort option
 
