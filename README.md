@@ -11,6 +11,13 @@ mvn spring-boot:run
 
 Or if you use an IDE like intellij you can launch directly on it.
 
+### Docker
+
+You can also use docker if you want:
+- Build your image with this command: docker build -t api
+- Run the image: docker run -it -p 8080:8080 api:latest
+- Access to the applciation via the localhost URL on port 8080: http://localhost:8080/swagger-ui/index.html
+
 ## SWAGGER
 
 You can find the swagger interface at this URL: http://localhost:8080/swagger-ui/index.html.
