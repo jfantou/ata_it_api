@@ -1,8 +1,8 @@
 package com.atait.api.config;
 
-import com.atait.api.dto.SalaryInformation;
+import com.atait.api.model.SalaryInformation;
 import com.atait.api.mapper.SalaryInformationMapper;
-import com.atait.api.model.SalaryInformationJson;
+import com.atait.api.dto.SalaryInformationJson;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;

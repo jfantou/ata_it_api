@@ -1,5 +1,6 @@
-package com.atait.api.dto;
+package com.atait.api.model;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
@@ -10,37 +11,29 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonFilter("SalaryInformation")
 public class SalaryInformation {
-    @JsonIgnore
     private Date timestamp;
 
-    @JsonIgnore
     private String employer;
 
-    @JsonIgnore
     private String location;
 
     private String job_title;
 
-    @JsonIgnore
     private float years_at_employer;
 
-    @JsonIgnore
     private float years_of_experience;
 
     private int salary;
 
-    @JsonIgnore
     private double signing_bonus;
 
-    @JsonIgnore
     private double annual_bonus;
 
-    @JsonIgnore
     private double annual_stock_value_bonus;
 
     private String gender;
 
-    @JsonIgnore
     private String additional_comments;
 }

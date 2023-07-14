@@ -1,8 +1,8 @@
 package com.atait.api.mapper;
 
 import com.atait.api.config.ConfigData;
-import com.atait.api.dto.SalaryInformation;
-import com.atait.api.model.SalaryInformationJson;
+import com.atait.api.model.SalaryInformation;
+import com.atait.api.dto.SalaryInformationJson;
 import org.springframework.stereotype.Component;
 
 import java.text.ParseException;

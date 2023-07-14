@@ -1,4 +1,4 @@
-package com.atait.api.model;
+package com.atait.api.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

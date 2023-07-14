@@ -1,6 +1,6 @@
 package com.atait.api.controller;
 
-import com.atait.api.dto.SalaryInformation;
+import com.atait.api.model.SalaryInformation;
 import com.atait.api.exception.FilterNotFoundException;
 import com.atait.api.exception.SortNotFoundException;
 import com.atait.api.service.SalaryService;

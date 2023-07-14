@@ -1,7 +1,7 @@
 package com.atait.api.utils;
 
 
-import com.atait.api.dto.SalaryInformation;
+import com.atait.api.model.SalaryInformation;
 import com.atait.api.exception.SortNotFoundException;
 
 import java.util.Comparator;

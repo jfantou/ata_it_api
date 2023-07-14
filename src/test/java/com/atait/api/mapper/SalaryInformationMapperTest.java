@@ -1,7 +1,7 @@
 package com.atait.api.mapper;
 
-import com.atait.api.dto.SalaryInformation;
-import com.atait.api.model.SalaryInformationJson;
+import com.atait.api.model.SalaryInformation;
+import com.atait.api.dto.SalaryInformationJson;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
